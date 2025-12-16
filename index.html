@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Susmita Bhattarai - Agri-Bioscience Specialist</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117; /* Dark background */
+            color: #e5e7eb; /* Light grey text */
+        }
+        /* NEW: Agricultural Green Theme (Lime-500 equivalent) */
+        .text-agri-green { 
+            color: #84cc16; /* Lime Green for growth/data */
+            text-shadow: 0 0 5px rgba(132, 204, 22, 0.4); /* Softer, green shadow */
+        }
+        .bg-matrix-dark {
+            background-color: #0b1114;
+        }
+        .border-agri-green {
+            border-color: #84cc16;
+            box-shadow: 0 0 10px rgba(132, 204, 22, 0.3); /* Reduced glow */
+        }
+        .card {
+            background-color: #161b22; /* Darker card background */
+            border: 1px solid #30363d;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(132, 204, 22, 0.1), 0 0 20px rgba(132, 204, 22, 0.4);
+        }
+        /* Custom pattern for the header */
+        .header-bg {
+            background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+            border-bottom: 2px solid #3f6212; /* Darker, organic green border */
+        }
+        /* Utility class for glowing dots/data points (now green) */
+        .data-point {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background-color: #84cc16;
+            border-radius: 50%;
+            box-shadow: 0 0 8px #84cc16;
+            animation: pulse 3s infinite alternate;
+        }
+        @keyframes pulse {
+            0% { opacity: 0.6; transform: scale(1); }
+            100% { opacity: 1; transform: scale(1.2); }
+        }
+
+        /* SVG icon style (now green) */
+        .svg-icon {
+            stroke: #84cc16;
+            fill: none;
+            stroke-width: 2;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Header & Bio Section -->
+    <header class="header-bg py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <!-- Background decorative elements (Genomic Code/Data Points) -->
+        <div class="data-point top-10 left-5"></div>
+        <div class="data-point bottom-10 right-1/4" style="animation-delay: 1.5s;"></div>
+        <div class="data-point top-1/4 right-5" style="animation-delay: 0.8s;"></div>
+        <div class="data-point bottom-5 left-1/2" style="animation-delay: 2.2s;"></div>
+
+        <div class="max-w-6xl mx-auto text-center relative z-10">
+            <!-- Profile Image Placeholder (Updated to a larger, themed placeholder) -->
+            <div class="w-32 h-32 mx-auto rounded-full bg-gray-700 border-4 border-agri-green flex items-center justify-center mb-4 overflow-hidden shadow-xl">
+                <!-- Switched placeholder to reflect the new green theme -->
+                <img src="https://placehold.co/128x128/161b22/84cc16?text=S.B." alt="Susmita Bhattarai Profile Image Placeholder" class="w-full h-full object-cover p-1 rounded-full border-2 border-lime-400" onerror="this.onerror=null; this.src='https://placehold.co/128x128/161b22/84cc16?text=SB'">
+            </div>
+            
+            <h1 class="text-5xl sm:text-7xl font-extrabold mb-2 tracking-tight">
+                <span class="text-white">Susmita</span> <span class="text-agri-green">Bhattarai</span>
+            </h1>
+            <p class="text-xl sm:text-2xl font-light text-gray-400 mb-6">
+                Agri-Bioscience Specialist | Advancing Sustainable Crop Systems
+            </p>
+            <div class="max-w-3xl mx-auto">
+                <p class="text-lg text-gray-300">
+                    A dedicated professional driving innovation in sustainable agriculture. My focus is on leveraging scientific knowledge in **crop production, livestock management, and environmental sustainability** to tackle real-world challenges and enhance global agricultural productivity. Eager to contribute innovative, data-driven solutions to the evolving agricultural sector.
+                </p>
+                
+                <!-- Contact Links (Updated with Facebook and WhatsApp) -->
+                <div class="mt-8 flex flex-wrap justify-center gap-4">
+                    <a href="mailto:susmitabhattrai80@gmail.com" class="text-agri-green hover:text-white transition duration-300 flex items-center p-2 rounded-lg bg-gray-800/50 hover:bg-gray-700/70">
+                        <!-- Email Icon (Inline SVG) -->
+                        <svg class="svg-icon w-5 h-5 mr-2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,14 2,6"></polyline></svg>
+                        EMAIL
+                    </a>
+                    <a href="https://www.facebook.com/guras.bhattarai" target="_blank" class="text-agri-green hover:text-white transition duration-300 flex items-center p-2 rounded-lg bg-gray-800/50 hover:bg-gray-700/70">
+                        <!-- Facebook Icon (Inline SVG) -->
+                        <svg class="svg-icon w-5 h-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        FACEBOOK
+                    </a>
+                    <a href="https://wa.me/9779817355272" target="_blank" class="text-agri-green hover:text-white transition duration-300 flex items-center p-2 rounded-lg bg-gray-800/50 hover:bg-gray-700/70">
+                        <!-- WhatsApp Icon (Inline SVG) -->
+                        <svg class="svg-icon w-5 h-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 13.5C22 17.6421 18.6421 21 14.5 21C11.6033 21 9.04337 19.4636 7.62095 17.2023L3 21L7.79774 16.3791C5.53644 14.9566 4 12.3967 4 9.5C4 5.35786 7.35786 2 11.5 2C15.6421 2 19 5.35786 19 9.5C19 11.4514 18.2393 13.2531 16.9996 14.6593L22 13.5Z"></path></svg>
+                        WHATSAPP
+                    </a>
+                    <a href="tel:+9779817355272" class="text-agri-green hover:text-white transition duration-300 flex items-center p-2 rounded-lg bg-gray-800/50 hover:bg-gray-700/70">
+                        <!-- Phone Icon (Inline SVG) -->
+                        <svg class="svg-icon w-5 h-5 mr-2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.08 2h3a2 2 0 0 1 2 1.74 15.15 15.15 0 0 0 1.44 5.23 2 2 0 0 1-.41 2.11l-1 1a12.16 12.16 0 0 0 6.9 6.9l1-1a2 2 0 0 1 2.11-.41 15.15 15.15 0 0 0 5.23 1.44 2 2 0 0 1 1.74 2z"></path></svg>
+                        CALL
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-4 sm:p-6 lg:p-8">
+
+        <!-- Core Competencies Section -->
+        <section class="mb-16">
+            <h2 class="text-4xl font-bold text-agri-green mb-8 border-b border-gray-700 pb-2">
+                // CORE_COMPETENCIES
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card p-6 rounded-xl">
+                    <h3 class="text-2xl font-semibold mb-3 text-lime-400">Crop Production & Genetics</h3>
+                    <p class="text-gray-400">Expertise in varietal trials, germination, seed priming, and genetic variability analysis of major crops like Rice and Lentil.</p>
+                </div>
+                <div class="card p-6 rounded-xl">
+                    <h3 class="text-2xl font-semibold mb-3 text-lime-400">Sustainable Practices</h3>
+                    <p class="text-gray-400">Focused on climate change adaptation, organic agriculture promotion, and the use of Biochar for soil health improvement.</p>
+                </div>
+                <div class="card p-6 rounded-xl">
+                    <h3 class="text-2xl font-semibold mb-3 text-lime-400">Pest & Host Resistance</h3>
+                    <p class="text-gray-400">Skilled in genotypic screening for resistance against pests like the Rice Leaf Folder and Yellow Stem Borer, ensuring crop security.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications/Research Section -->
+        <section class="mb-16">
+            <h2 class="text-4xl font-bold text-agri-green mb-8 border-b border-gray-700 pb-2">
+                // RESEARCH_LOGS (Publications)
+            </h2>
+            <div class="space-y-6">
+                <!-- Research Item 1 -->
+                <div class="card p-6 rounded-xl flex flex-col md:flex-row md:justify-between items-start md:items-center">
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-semibold text-white mb-1">Genetic Variability, Character Association... of Rice Genotypes</h3>
+                        <p class="text-sm text-gray-400">A detailed analysis published in 2023 on agro-morphological traits to inform future breeding programs.</p>
+                    </div>
+                    <!-- Updated color for the tag -->
+                    <span class="mt-2 md:mt-0 px-3 py-1 text-xs font-medium bg-lime-900/50 text-lime-400 rounded-full border border-lime-400/50">
+                        2023 | Crop Genetics
+                    </span>
+                </div>
+                <!-- Research Item 2 -->
+                <div class="card p-6 rounded-xl flex flex-col md:flex-row md:justify-between items-start md:items-center">
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-semibold text-white mb-1">Insights into the germplasm conservation and utilization...</h3>
+                        <p class="text-sm text-gray-400">Implications for sustainable agriculture and future crop improvement (2024).</p>
+                    </div>
+                    <!-- Updated color for the tag -->
+                    <span class="mt-2 md:mt-0 px-3 py-1 text-xs font-medium bg-lime-900/50 text-lime-400 rounded-full border border-lime-400/50">
+                        2024 | Conservation
+                    </span>
+                </div>
+                <!-- Research Item 3 -->
+                <div class="card p-6 rounded-xl flex flex-col md:flex-row md:justify-between items-start md:items-center">
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-semibold text-white mb-1">Biochar application: A sustainable approach to improve soil health</h3>
+                        <p class="text-sm text-gray-400">Exploration of biochar's efficacy for enhanced soil conditions (2023).</p>
+                    </div>
+                    <!-- Updated color for the tag -->
+                    <span class="mt-2 md:mt-0 px-3 py-1 text-xs font-medium bg-lime-900/50 text-lime-400 rounded-full border border-lime-400/50">
+                        2023 | Soil Science
+                    </span>
+                </div>
+                <div class="text-center pt-4">
+                    <!-- Updated button color and shadow -->
+                    <button onclick="document.getElementById('full-pub-list').classList.toggle('hidden')" class="px-6 py-2 bg-lime-600 hover:bg-lime-700 text-white font-semibold rounded-lg transition duration-300 shadow-lg shadow-lime-500/30">
+                        ACCESS FULL MANIFEST
+                    </button>
+                </div>
+
+                <!-- Hidden Full List -->
+                <div id="full-pub-list" class="space-y-4 pt-4 hidden">
+                    <p class="text-gray-500">// Additional Publications</p>
+                    <ul class="list-disc list-inside space-y-2 ml-4 text-gray-300">
+                        <li>Effect of Seed Priming on Germination, Seedling Emergence and Development of Spring Rice Var. Hardinath-1 (2023)</li>
+                        <li>Evaluation of Host Plant Resistance Against the Rice Leaf Folder... (2023)</li>
+                        <li>Genetic variability of panicle architecture traits in different rice accessions... (2023)</li>
+                        <li>Comparative analysis of seed priming on the germination and growth of lentil landraces (2023)</li>
+                        <li>Genetic Engineering: An Emerging Method in Plant Breeding (2023)</li>
+                        <li>Decision-Making Perspective on Diversifying Farm Systems for Climate Change Adaptation... (2023)</li>
+                        <li>Varietal trial of okra (Abelmoschus esculentus L.) for evaluation of yield and yield parameters (2022)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Section -->
+        <section class="mb-16">
+            <h2 class="text-4xl font-bold text-agri-green mb-8 border-b border-gray-700 pb-2">
+                // ACADEMIC_DATALOG
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Experience -->
+                <div class="card p-6 rounded-xl">
+                    <h3 class="text-2xl font-semibold mb-4 text-white border-b border-gray-700 pb-2">
+                        OPERATIONAL EXPERIENCE
+                    </h3>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-lg font-medium text-lime-400">Intern | Agricultural Development Farm</p>
+                            <p class="text-sm text-gray-500">Shivasatakshi - 07, Jhapa, Nepal | Jan 2023 - Jun 2023</p>
+                            <ul class="list-disc list-inside ml-4 mt-2 text-gray-400 text-sm">
+                                <li>Executed standardized **Soil testing** procedures.</li>
+                                <li>Conducted rigorous **Field monitoring** protocols.</li>
+                                <li>Performed **Germination test** analyses for quality assurance.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="card p-6 rounded-xl">
+                    <h3 class="text-2xl font-semibold mb-4 text-white border-b border-gray-700 pb-2">
+                        ACADEMIC TRAINING
+                    </h3>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-lg font-medium text-lime-400">Bachelor of Science (Honours) in Agriculture</p>
+                            <p class="text-sm text-gray-500">G.P. Koirala College of Agriculture and Research Center, Nepal | 2018 - 2022</p>
+                        </div>
+                        <div>
+                            <p class="text-lg font-medium text-lime-400">Intermediate of Science</p>
+                            <p class="text-sm text-gray-500">Panchayat Secondary School, Nepal | 2016 - 2018</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Digital Skills & Languages Section -->
+        <section class="mb-16">
+            <h2 class="text-4xl font-bold text-agri-green mb-8 border-b border-gray-700 pb-2">
+                // INTERFACE_CAPABILITIES
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Digital Skills -->
+                <div class="card p-6 rounded-xl">
+                    <h3 class="text-2xl font-semibold mb-4 text-white">Digital Interface Proficiencies</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-tag px-4 py-2 bg-gray-700/50 text-gray-300 rounded-full text-sm hover:bg-gray-600 transition">Microsoft Powerpoint</span>
+                        <span class="skill-tag px-4 py-2 bg-gray-700/50 text-gray-300 rounded-full text-sm hover:bg-gray-600 transition">Microsoft Word</span>
+                        <span class="skill-tag px-4 py-2 bg-gray-700/50 text-gray-300 rounded-full text-sm hover:bg-gray-600 transition">Microsoft Excel (Data Analysis)</span>
+                        <span class="skill-tag px-4 py-2 bg-gray-700/50 text-gray-300 rounded-full text-sm hover:bg-gray-600 transition">Social Media Management</span>
+                        <span class="skill-tag px-4 py-2 bg-gray-700/50 text-gray-300 rounded-full text-sm hover:bg-gray-600 transition">Google Drive Ecosystem</span>
+                        <span class="skill-tag px-4 py-2 bg-gray-700/50 text-gray-300 rounded-full text-sm hover:bg-gray-600 transition">Zoom Conferencing</span>
+                    </div>
+                </div>
+                <!-- Languages -->
+                <div class="card p-6 rounded-xl">
+                    <h3 class="text-2xl font-semibold mb-4 text-white">Language Processing Modules</h3>
+                    <div class="space-y-3">
+                        <p class="text-lg font-medium text-lime-400">Native Module: Nepali</p>
+                        <div class="flex items-center">
+                            <p class="w-24 font-medium text-gray-400">English:</p>
+                            <span class="px-3 py-1 text-sm font-semibold bg-green-700/50 text-green-300 rounded-full">C1 Proficient User</span>
+                            <span class="ml-4 text-xs text-gray-500">(Reading, Writing, Speaking)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-matrix-dark border-t border-gray-800 mt-12 py-6">
+        <div class="max-w-6xl mx-auto text-center text-gray-500 text-sm">
+            <p>&copy; 2079 - Susmita Bhattarai. Data stream initialized from Urlabari, Morang, Nepal.</p>
+            <!-- Updated footer status text -->
+            <p>Design Protocol: Agri-Future v1.0 | <span class="text-agri-green">GROWTH_CYCLE_ACTIVE</span></p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple DOM interaction for the contact button, typical for a futuristic UI concept
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Agri-Bioscience Interface Initialized.');
+        });
+    </script>
+
+</body>
+</html>
